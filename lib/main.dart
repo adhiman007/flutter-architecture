@@ -8,7 +8,7 @@ import 'core/provider/provider_view.dart';
 import 'core/route/router.gr.dart';
 
 void main() {
-  configureInjection('prod');
+  configureInjection(Env.dev);
   runApp(MyApp());
 }
 

@@ -22,9 +22,7 @@ class LoginScreen extends HookWidget {
       elevation: 0.0,
       actions: <Widget>[
         IconButton(
-            icon: Icon(Theme.of(context).brightness == Brightness.light
-                ? Icons.brightness_low
-                : Icons.brightness_high),
+            icon: Icon(Icons.brightness_high),
             onPressed: () {
               final theme = Provider.of<ThemeProvider>(context, listen: false);
               theme.appTheme = theme.appTheme == AppTheme.Light
